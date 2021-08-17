@@ -12,10 +12,14 @@
         <entry key="app/src/main/res/drawable/ic_photos.xml" value="0.18697916666666667" />
         <entry key="app/src/main/res/drawable/ic_samad.xml" value="0.18697916666666667" />
         <entry key="app/src/main/res/drawable/ic_social.xml" value="0.18697916666666667" />
+        <entry key="app/src/main/res/font/.xml" value="0.10416666666666667" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="app/src/main/res/layout/drawer_haeder.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/drawer_items.xml" value="0.17083333333333334" />
+        <entry key="app/src/main/res/layout/fragment_calender.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/fragment_main.xml" value="0.17083333333333334" />
+        <entry key="app/src/main/res/layout/fragment_news.xml" value="0.17083333333333334" />
+        <entry key="app/src/main/res/layout/fragment_notif.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/fragment_second.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/layout/main_items.xml" value="0.17083333333333334" />
         <entry key="app/src/main/res/menu/main_drawer.xml" value="0.22" />
