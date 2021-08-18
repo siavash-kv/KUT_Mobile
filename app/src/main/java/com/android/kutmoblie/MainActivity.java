@@ -66,11 +66,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
-    @Override
-    public void onButtonSelected() {
-        fragmentManager = getSupportFragmentManager();
-        fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new calender());
-        fragmentTransaction.commit();
-    }
+
 }

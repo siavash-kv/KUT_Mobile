@@ -10,9 +10,10 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="69dp"
-        android:layout_marginTop="66dp"
-        android:text="Header"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="36dp"
+        android:text="Fuck You dude"
+        android:textColor="#FFFFFF"
         android:textSize="33dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
