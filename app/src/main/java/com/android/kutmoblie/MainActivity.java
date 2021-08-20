@@ -9,12 +9,14 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
+import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import com.google.android.material.navigation.NavigationView;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,mainfrag.onFragmentBtnSelected {
   DrawerLayout drawerLayout;
   ActionBarDrawerToggle actionBarDrawerToggle;
   Toolbar toolbar;
@@ -59,6 +61,63 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.replace(R.id.item_frag,new calender());
                 fragmentTransaction.commit();
                 return true;
+            case R.id.notif_m:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new notification());
+                fragmentTransaction.commit();
+                return true;
+            case R.id.news:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new news());
+                fragmentTransaction.commit();
+                return true;
+            case R.id.samad:
+                Intent intentsamad = new Intent();
+                intentsamad.setAction(Intent.ACTION_VIEW);
+                intentsamad.addCategory(Intent.CATEGORY_BROWSABLE);
+                intentsamad.setData(Uri.parse("http://food.kut.ac.ir/"));
+                startActivity(intentsamad);
+                return true;
+            case R.id.heiat_m:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new heiat());
+                fragmentTransaction.commit();
+                return true;
+            case R.id.golestan_m:
+                Intent intentgolestan = new Intent();
+                intentgolestan.setAction(Intent.ACTION_VIEW);
+                intentgolestan.addCategory(Intent.CATEGORY_BROWSABLE);
+                intentgolestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
+                startActivity(intentgolestan);
+                return true;
+            case R.id.social_m:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new social());
+                fragmentTransaction.commit();
+                return true;
+            case R.id.phone_m:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new phones());
+                fragmentTransaction.commit();
+                return true;
+            case R.id.map_m:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new map());
+                fragmentTransaction.commit();
+                return true;
+            case R.id.logout:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new calender());
+                fragmentTransaction.commit();
+                return true;
+
             default:
                 //default intent
                 return true;
@@ -66,5 +125,77 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     }
 
+    @Override
+    public void calselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new calender());
+        fragmentTransaction.commit();
+    }
 
+    @Override
+    public void newsselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new news());
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void notifselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new notification());
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void photoselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new heiat());
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void phoneselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new phones());
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void mapselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new map());
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void socialselected() {
+        fragmentManager = getSupportFragmentManager();
+        fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.item_frag,new social());
+        fragmentTransaction.commit();
+    }
+
+    @Override
+    public void samadselected() {
+        Intent intentsamad = new Intent();
+        intentsamad.setAction(Intent.ACTION_VIEW);
+        intentsamad.addCategory(Intent.CATEGORY_BROWSABLE);
+        intentsamad.setData(Uri.parse("http://food.kut.ac.ir/"));
+        startActivity(intentsamad);
+    }
+
+    @Override
+    public void golestanselected() {
+        Intent intentgolestan = new Intent();
+        intentgolestan.setAction(Intent.ACTION_VIEW);
+        intentgolestan.addCategory(Intent.CATEGORY_BROWSABLE);
+        intentgolestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
+        startActivity(intentgolestan);
+    }
 }

@@ -200,7 +200,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <ImageButton
-            android:id="@+id/phone_b"
+            android:id="@+id/phone_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -228,7 +228,7 @@
         app:layout_constraintTop_toTopOf="@+id/linearLayout9">
 
         <ImageButton
-            android:id="@+id/golestan_b"
+            android:id="@+id/golestan_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -258,7 +258,7 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
         <ImageButton
-            android:id="@+id/social_b"
+            android:id="@+id/social_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"

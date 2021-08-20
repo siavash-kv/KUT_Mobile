@@ -22,7 +22,7 @@
         android:icon="@drawable/ic_samad"
         android:title="سامانه سماد " />
     <item
-        android:id="@+id/photo"
+        android:id="@+id/heiat_m"
         android:icon="@drawable/ic_heiatelmi"
         android:title="اعضای هیئت علمی" />
     <item
