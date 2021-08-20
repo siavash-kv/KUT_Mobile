@@ -9,9 +9,11 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="9dp"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6">
 
         <ImageButton
             android:id="@+id/cal_btn"
@@ -30,17 +32,17 @@
             android:fontFamily="@font/b_mehr"
             android:text="تقویم"
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="23dp"
+        android:layout_marginTop="89dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout3"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
+        app:layout_constraintStart_toStartOf="@+id/linearLayout7"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3">
 
         <ImageButton
             android:id="@+id/notif_btn"
@@ -60,19 +62,16 @@
             android:fontFamily="@font/b_mehr"
             android:text="اطلاعیه ها"
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="45dp"
-        android:layout_marginBottom="29dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout6">
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
 
         <ImageButton
             android:id="@+id/news_btn"
@@ -92,19 +91,18 @@
             android:fontFamily="@font/b_mehr"
             android:text="اخبار دانشگاه"
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="26dp"
-        android:layout_marginEnd="4dp"
+        android:layout_marginTop="16dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout5">
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
 
         <ImageButton
             android:id="@+id/samad_btn"
@@ -124,17 +122,18 @@
             android:fontFamily="@font/b_mehr"
             android:text="سامانه سماد"
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="9dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toStartOf="@+id/linearLayout6"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout6">
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <ImageButton
             android:id="@+id/map_btn"
@@ -154,19 +153,19 @@
             android:fontFamily="@font/b_mehr"
             android:text="نقشه"
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="30dp"
-        android:layout_marginBottom="161dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="8dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout5">
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
 
         <ImageButton
             android:id="@+id/photo_btn"
@@ -174,9 +173,9 @@
             android:layout_height="85dp"
             android:layout_gravity="center"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/ic_photos"
+            app:srcCompat="@drawable/ic_heiatelmi"
             tools:ignore="SpeakableTextPresentCheck"
-            tools:srcCompat="@drawable/ic_photos" />
+            tools:srcCompat="@drawable/ic_heiatelmi" />
 
         <TextView
             android:id="@+id/textView8"
@@ -184,9 +183,118 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/b_mehr"
-            android:text="تصاویر دانشگاه"
+            android:text="اعضای هیئت علمی"
             android:textColor="#FFFFFF"
-            android:textSize="20dp" />
+            android:textSize="15dp" />
     </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="28dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout4"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageButton
+            android:id="@+id/phone_b"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/ic_phonebook"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_mehr"
+            android:text="دفترچه تلفن"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout9">
+
+        <ImageButton
+            android:id="@+id/golestan_b"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/ic_golestan"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_mehr"
+            android:text="سامانه گلستان"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout8"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
+
+        <ImageButton
+            android:id="@+id/social_b"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_gravity="center"
+            android:background="#00FFFFFF"
+            app:srcCompat="@drawable/ic_social"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/b_mehr"
+            android:text="شبکه های اجتماعی"
+            android:textColor="#FFFFFF"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/loogoo" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="141dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/log0o" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

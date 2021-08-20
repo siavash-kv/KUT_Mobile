@@ -23,8 +23,20 @@
         android:title="سامانه سماد " />
     <item
         android:id="@+id/photo"
-        android:icon="@drawable/ic_photos"
-        android:title="عکس ها" />
+        android:icon="@drawable/ic_heiatelmi"
+        android:title="اعضای هیئت علمی" />
+    <item
+        android:id="@+id/golestan_m"
+        android:icon="@drawable/ic_golestan"
+        android:title="سامانه گلستان" />
+    <item
+        android:id="@+id/phone_m"
+        android:icon="@drawable/ic_phonebook"
+        android:title="دفترچه تلفن" />
+    <item
+        android:id="@+id/social_m"
+        android:icon="@drawable/ic_social"
+        android:title="شبکه های اجتماعی" />
     <item
         android:id="@+id/map_m"
         android:icon="@drawable/ic_map"
