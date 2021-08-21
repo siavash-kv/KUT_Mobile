@@ -2,12 +2,8 @@
 <resources>
 
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-
-
     </style>
-    <style name="AppTheeme" parent="Theme.AppCompat.Light.NoActionBar">
-
+    <style name="AppTheeme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/mainbasecolor</item>
     </style>
-
-
 </resources>

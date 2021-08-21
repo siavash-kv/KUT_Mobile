@@ -9,7 +9,7 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="9dp"
+        android:layout_marginEnd="8dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
@@ -39,10 +39,9 @@
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="89dp"
         android:orientation="vertical"
         app:layout_constraintStart_toStartOf="@+id/linearLayout7"
-        app:layout_constraintTop_toBottomOf="@+id/imageView3">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout3">
 
         <ImageButton
             android:id="@+id/notif_btn"
@@ -69,9 +68,10 @@
         android:id="@+id/linearLayout3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout4"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout4">
 
         <ImageButton
             android:id="@+id/news_btn"
@@ -98,11 +98,11 @@
         android:id="@+id/linearLayout4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginEnd="25dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
         app:layout_constraintStart_toEndOf="@+id/linearLayout6"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout6">
 
         <ImageButton
             android:id="@+id/samad_btn"
@@ -129,10 +129,13 @@
         android:id="@+id/linearLayout5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="9dp"
+        android:layout_marginEnd="23dp"
         android:orientation="vertical"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <ImageButton
@@ -160,12 +163,13 @@
         android:id="@+id/linearLayout6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="8dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="195dp"
         android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout4"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout4">
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
             android:id="@+id/photo_btn"
@@ -193,7 +197,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="9dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout4"
@@ -223,8 +227,10 @@
         android:id="@+id/linearLayout8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="15dp"
         android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="@+id/linearLayout4"
+        app:layout_constraintEnd_toStartOf="@+id/linearLayout9"
+        app:layout_constraintStart_toEndOf="@+id/linearLayout5"
         app:layout_constraintTop_toTopOf="@+id/linearLayout9">
 
         <ImageButton
@@ -251,9 +257,9 @@
         android:id="@+id/linearLayout9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="15dp"
         android:layout_marginTop="16dp"
         android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout8"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout7">
 
