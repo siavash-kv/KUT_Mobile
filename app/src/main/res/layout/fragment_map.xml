@@ -7,16 +7,31 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="217dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="203dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="392dp"
-        android:text="map"
-        android:textSize="50dp"
+        android:layout_width="397dp"
+        android:layout_height="190dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="100dp"
+        android:fontFamily="@font/b_mehr"
+        android:text="   ایمیل: admin@kut.ac.ir \n   آدرس:کرمانشاه-بزرگراه امام خمینی(ره) \n   کدپستی: ۶۷۱۵۶۸۵۴۲۰  "
+        android:textSize="25dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="72dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="48dp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/map_kut" />
 </androidx.constraintlayout.widget.ConstraintLayout>

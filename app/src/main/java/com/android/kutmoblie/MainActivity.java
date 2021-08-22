@@ -8,13 +8,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.MenuItem;
-
 import com.google.android.material.navigation.NavigationView;
+import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,mainfrag.onFragmentBtnSelected {
   DrawerLayout drawerLayout;
@@ -44,6 +43,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
   fragmentTransaction = fragmentManager.beginTransaction();
   fragmentTransaction.add(R.id.item_frag,new mainfrag());
   fragmentTransaction.commit();
+
     }
 
     @Override

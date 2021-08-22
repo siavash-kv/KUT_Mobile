@@ -7,16 +7,43 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="217dp"
-        android:layout_height="136dp"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="203dp"
-        android:layout_marginEnd="114dp"
-        android:layout_marginBottom="392dp"
-        android:text="social"
-        android:textSize="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="134dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/b_mehr"
+        android:text="لینک شبکه های اجتماعی"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/instagram_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/instagram_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="446dp"
+        android:background="#00FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/telegram_btn"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:srcCompat="@drawable/ic_instagram_kut"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+    <ImageButton
+        android:id="@+id/telegram_btn"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="214dp"
+        android:layout_marginEnd="16dp"
+        android:background="#00FFFFFF"
+        app:layout_constraintBottom_toBottomOf="@+id/instagram_btn"
+        app:layout_constraintEnd_toStartOf="@+id/instagram_btn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/instagram_btn"
+        app:srcCompat="@drawable/ic_telegram_kut"
+        tools:ignore="SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>

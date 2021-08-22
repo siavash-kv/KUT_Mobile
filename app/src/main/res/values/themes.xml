@@ -13,8 +13,8 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
-<style name="splashScreentheme" parent="Theme.MaterialComponents.Light.NoActionBar">
-    <item name="android:windowBackground">@drawable/splash_image</item>
-    <item name="android:statusBarColor">@color/black</item>
+<style name="splashScreen_theme" parent="Theme.MaterialComponents.Light.NoActionBar">
+    <item name="android:windowBackground">@drawable/splash_kut_image</item>
+    <item name="android:statusBarColor">#000011</item>
 </style>
 </resources>
