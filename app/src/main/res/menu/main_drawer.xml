@@ -6,7 +6,7 @@
         android:icon="@drawable/ic_home"
         android:title="صفحه نخست" />
     <item
-        android:id="@+id/cal_menu_btn"
+        android:id="@+id/calender_menu_btn"
         android:icon="@drawable/ic_calender"
         android:title="تقویم" />
     <item

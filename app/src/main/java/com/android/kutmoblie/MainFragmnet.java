@@ -31,20 +31,20 @@ private onFragmentBtnSelected listener;
             listener = (onFragmentBtnSelected) context;
     }
     public interface onFragmentBtnSelected{
-        public void calselected();
-        public void newsselected();
-        public void notifselected();
-        public void photoselected();
-        public void phoneselected();
-        public void walfareselected();
-        public void socialselected();
-        public void samadselected();
-        public void golestanselected();
+        public void calender_selected();
+        public void news_selected();
+        public void notification_selected();
+        public void heiat_selected();
+        public void phone_selected();
+        public void walfare_selected();
+        public void social_selected();
+        public void samad_selected();
+        public void golestan_selected();
 
     }
 
     private void configureImageButton(View view) {
-        ImageButton cal_b = (ImageButton) view.findViewById(R.id.cal_main_btn);
+        ImageButton cal_b = (ImageButton) view.findViewById(R.id.calender_main_btn);
         ImageButton news_b = (ImageButton) view.findViewById(R.id.news_main_btn);
         ImageButton notif_b = (ImageButton) view.findViewById(R.id.notification_main_btn);
         ImageButton photo_b = (ImageButton) view.findViewById(R.id.heiat_main_btn);
@@ -56,55 +56,54 @@ private onFragmentBtnSelected listener;
 
         cal_b.setOnClickListener(new View.OnClickListener() {
          @Override
-         public void onClick(View v) {
-         listener.calselected();
+         public void onClick(View v) { listener.calender_selected();
           }
         });
             news_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-               listener.newsselected();
+               listener.news_selected();
             }
         });
         notif_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.notifselected();
+                listener.notification_selected();
             }
         });
         photo_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.photoselected();
+                listener.heiat_selected();
             }
         });
         phone_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.phoneselected();
+                listener.phone_selected();
             }
         });
         walfare_b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) { listener.walfareselected();
+            public void onClick(View view) { listener.walfare_selected();
             }
         });
         social_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.socialselected();
+                listener.social_selected();
             }
         });
         samad_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.samadselected();
+                listener.samad_selected();
             }
         });
         golestan_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.golestanselected();
+                listener.golestan_selected();
             }
         });
     }

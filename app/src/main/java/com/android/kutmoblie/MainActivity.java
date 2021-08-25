@@ -56,7 +56,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.replace(R.id.item_frag,new MainFragmnet());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.cal_menu_btn:
+            case R.id.calender_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
                 fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
@@ -132,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void calselected() {
+    public void calender_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
@@ -140,7 +140,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void newsselected() {
+    public void news_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new NewsFragment());
@@ -148,7 +148,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void notifselected() {
+    public void notification_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new NotificationFragmnet());
@@ -156,7 +156,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void photoselected() {
+    public void heiat_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new HeiatFragment());
@@ -164,7 +164,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void phoneselected() {
+    public void phone_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new PhonesFragmnet());
@@ -172,7 +172,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void walfareselected() {
+    public void walfare_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new WalfareServiceFragment());
@@ -180,7 +180,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void socialselected() {
+    public void social_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
         fragmentTransaction.replace(R.id.item_frag,new SocialFragmnet());
@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void samadselected() {
+    public void samad_selected() {
         Intent intentsamad = new Intent();
         intentsamad.setAction(Intent.ACTION_VIEW);
         intentsamad.addCategory(Intent.CATEGORY_BROWSABLE);
@@ -197,7 +197,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void golestanselected() {
+    public void golestan_selected() {
         Intent intentgolestan = new Intent();
         intentgolestan.setAction(Intent.ACTION_VIEW);
         intentgolestan.addCategory(Intent.CATEGORY_BROWSABLE);
