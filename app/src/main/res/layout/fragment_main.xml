@@ -9,16 +9,14 @@
         android:id="@+id/linearLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="55dp"
         android:layout_marginEnd="8dp"
         android:layout_marginBottom="14dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout6"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout6"
-        app:layout_constraintStart_toStartOf="parent">
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout6">
 
         <ImageButton
-            android:id="@+id/cal_btn"
+            android:id="@+id/cal_main_btn"
             android:layout_width="85dp"
             android:layout_height="87dp"
             android:layout_gravity="center"
@@ -41,16 +39,14 @@
         android:id="@+id/linearLayout2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="24dp"
         android:layout_marginEnd="1dp"
         android:layout_marginBottom="16dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout7"
-        app:layout_constraintEnd_toEndOf="@+id/linearLayout7"
-        app:layout_constraintStart_toEndOf="@+id/linearLayout3">
+        app:layout_constraintEnd_toEndOf="@+id/linearLayout7">
 
         <ImageButton
-            android:id="@+id/notif_btn"
+            android:id="@+id/notification_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -80,7 +76,7 @@
         app:layout_constraintStart_toStartOf="@+id/linearLayout4">
 
         <ImageButton
-            android:id="@+id/news_btn"
+            android:id="@+id/news_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -106,15 +102,13 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="16dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/linearLayout8"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout7"
         app:layout_constraintStart_toEndOf="@+id/linearLayout6"
         app:layout_constraintTop_toTopOf="@+id/linearLayout6">
 
         <ImageButton
-            android:id="@+id/samad_btn"
+            android:id="@+id/samad_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -138,26 +132,24 @@
         android:id="@+id/linearLayout5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
+        android:layout_marginStart="13dp"
         android:layout_marginTop="16dp"
-        android:layout_marginEnd="23dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginEnd="18dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout8"
         app:layout_constraintHorizontal_chainStyle="packed"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/linearLayout6">
 
         <ImageButton
-            android:id="@+id/map_btn"
+            android:id="@+id/walfares_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
             android:background="#00FFFFFF"
-            app:srcCompat="@drawable/ic_map"
+            app:srcCompat="@drawable/ic_walfare_s"
             tools:ignore="SpeakableTextPresentCheck"
-            tools:srcCompat="@drawable/ic_map" />
+            tools:srcCompat="@drawable/ic_walfare_s" />
 
         <TextView
             android:id="@+id/textView7"
@@ -165,7 +157,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:fontFamily="@font/b_mehr"
-            android:text="نقشه"
+            android:text="  خدمات رفاهی \n    دانشجویی"
             android:textColor="#FFFFFF"
             android:textSize="15dp" />
     </LinearLayout>
@@ -183,7 +175,7 @@
         app:layout_constraintStart_toStartOf="parent">
 
         <ImageButton
-            android:id="@+id/photo_btn"
+            android:id="@+id/heiat_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -215,7 +207,7 @@
         app:layout_constraintStart_toEndOf="@+id/linearLayout4">
 
         <ImageButton
-            android:id="@+id/phone_btn"
+            android:id="@+id/phone_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -238,16 +230,15 @@
         android:id="@+id/linearLayout8"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="18dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/linearLayout9"
         app:layout_constraintStart_toEndOf="@+id/linearLayout5"
-        app:layout_constraintTop_toTopOf="@+id/linearLayout9">
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
 
         <ImageButton
-            android:id="@+id/golestan_btn"
+            android:id="@+id/golestan_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"
@@ -270,16 +261,13 @@
         android:id="@+id/linearLayout9"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:layout_marginBottom="64dp"
         android:orientation="vertical"
-        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toEndOf="@+id/linearLayout8"
-        app:layout_constraintTop_toBottomOf="@+id/linearLayout4">
+        app:layout_constraintTop_toTopOf="@+id/linearLayout8">
 
         <ImageButton
-            android:id="@+id/social_btn"
+            android:id="@+id/social_main_btn"
             android:layout_width="85dp"
             android:layout_height="85dp"
             android:layout_gravity="center"

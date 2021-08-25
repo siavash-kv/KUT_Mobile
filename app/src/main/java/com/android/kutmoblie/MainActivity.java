@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,mainfrag.onFragmentBtnSelected {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,MainFragmnet.onFragmentBtnSelected {
   DrawerLayout drawerLayout;
   ActionBarDrawerToggle actionBarDrawerToggle;
   Toolbar toolbar;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
   fragmentManager = getSupportFragmentManager();
   fragmentTransaction = fragmentManager.beginTransaction();
-  fragmentTransaction.add(R.id.item_frag,new mainfrag());
+  fragmentTransaction.add(R.id.item_frag,new MainFragmnet());
   fragmentTransaction.commit();
 
     }
@@ -50,72 +50,77 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public boolean onNavigationItemSelected(@NonNull MenuItem item) {
         drawerLayout.closeDrawer(GravityCompat.START);
         switch (item.getItemId()) {
-            case R.id.home:
+            case R.id.home_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new mainfrag());
+                fragmentTransaction.replace(R.id.item_frag,new MainFragmnet());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.cal:
+            case R.id.cal_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new calender());
+                fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.notif_m:
+            case R.id.notif_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new notification());
+                fragmentTransaction.replace(R.id.item_frag,new NotificationFragmnet());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.news:
+            case R.id.news_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new news());
+                fragmentTransaction.replace(R.id.item_frag,new NewsFragment());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.samad:
+            case R.id.samad_menu_btn:
                 Intent intentsamad = new Intent();
                 intentsamad.setAction(Intent.ACTION_VIEW);
                 intentsamad.addCategory(Intent.CATEGORY_BROWSABLE);
                 intentsamad.setData(Uri.parse("http://food.kut.ac.ir/"));
                 startActivity(intentsamad);
                 return true;
-            case R.id.heiat_m:
+            case R.id.heiat_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new heiat());
+                fragmentTransaction.replace(R.id.item_frag,new HeiatFragment());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.golestan_m:
+            case R.id.golestan_menu_btn:
                 Intent intentgolestan = new Intent();
                 intentgolestan.setAction(Intent.ACTION_VIEW);
                 intentgolestan.addCategory(Intent.CATEGORY_BROWSABLE);
                 intentgolestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
                 startActivity(intentgolestan);
                 return true;
-            case R.id.social_m:
+            case R.id.social_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new social());
+                fragmentTransaction.replace(R.id.item_frag,new SocialFragmnet());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.phone_m:
+            case R.id.phone_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new phones());
+                fragmentTransaction.replace(R.id.item_frag,new PhonesFragmnet());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.map_m:
+            case R.id.map_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new map());
+                fragmentTransaction.replace(R.id.item_frag,new MapFragment());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.logout:
+            case R.id.walfare_S_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new calender());
+                fragmentTransaction.replace(R.id.item_frag,new WalfareServiceFragment());
+                fragmentTransaction.commit();
+            case R.id.logout_menu_btn:
+                fragmentManager = getSupportFragmentManager();
+                fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
                 fragmentTransaction.commit();
                 return true;
 
@@ -130,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void calselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new calender());
+        fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
         fragmentTransaction.commit();
     }
 
@@ -138,7 +143,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void newsselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new news());
+        fragmentTransaction.replace(R.id.item_frag,new NewsFragment());
         fragmentTransaction.commit();
     }
 
@@ -146,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void notifselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new notification());
+        fragmentTransaction.replace(R.id.item_frag,new NotificationFragmnet());
         fragmentTransaction.commit();
     }
 
@@ -154,7 +159,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void photoselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new heiat());
+        fragmentTransaction.replace(R.id.item_frag,new HeiatFragment());
         fragmentTransaction.commit();
     }
 
@@ -162,15 +167,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void phoneselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new phones());
+        fragmentTransaction.replace(R.id.item_frag,new PhonesFragmnet());
         fragmentTransaction.commit();
     }
 
     @Override
-    public void mapselected() {
+    public void walfareselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new map());
+        fragmentTransaction.replace(R.id.item_frag,new WalfareServiceFragment());
         fragmentTransaction.commit();
     }
 
@@ -178,7 +183,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void socialselected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new social());
+        fragmentTransaction.replace(R.id.item_frag,new SocialFragmnet());
         fragmentTransaction.commit();
     }
 

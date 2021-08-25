@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class mainfrag extends Fragment {
+public class MainFragmnet extends Fragment {
 private onFragmentBtnSelected listener;
     @Nullable
     @Override
@@ -36,7 +36,7 @@ private onFragmentBtnSelected listener;
         public void notifselected();
         public void photoselected();
         public void phoneselected();
-        public void mapselected();
+        public void walfareselected();
         public void socialselected();
         public void samadselected();
         public void golestanselected();
@@ -44,15 +44,15 @@ private onFragmentBtnSelected listener;
     }
 
     private void configureImageButton(View view) {
-        ImageButton cal_b = (ImageButton) view.findViewById(R.id.cal_btn);
-        ImageButton news_b = (ImageButton) view.findViewById(R.id.news_btn);
-        ImageButton notif_b = (ImageButton) view.findViewById(R.id.notif_btn);
-        ImageButton photo_b = (ImageButton) view.findViewById(R.id.photo_btn);
-        ImageButton phone_b = (ImageButton) view.findViewById(R.id.phone_btn);
-        ImageButton map_b = (ImageButton) view.findViewById(R.id.map_btn);
-        ImageButton social_b = (ImageButton) view.findViewById(R.id.social_btn);
-        ImageButton samad_b = (ImageButton) view.findViewById(R.id.samad_btn);
-        ImageButton golestan_b = (ImageButton) view.findViewById(R.id.golestan_btn);
+        ImageButton cal_b = (ImageButton) view.findViewById(R.id.cal_main_btn);
+        ImageButton news_b = (ImageButton) view.findViewById(R.id.news_main_btn);
+        ImageButton notif_b = (ImageButton) view.findViewById(R.id.notification_main_btn);
+        ImageButton photo_b = (ImageButton) view.findViewById(R.id.heiat_main_btn);
+        ImageButton phone_b = (ImageButton) view.findViewById(R.id.phone_main_btn);
+        ImageButton walfare_b = (ImageButton) view.findViewById(R.id.walfares_main_btn);
+        ImageButton social_b = (ImageButton) view.findViewById(R.id.social_main_btn);
+        ImageButton samad_b = (ImageButton) view.findViewById(R.id.samad_main_btn);
+        ImageButton golestan_b = (ImageButton) view.findViewById(R.id.golestan_main_btn);
 
         cal_b.setOnClickListener(new View.OnClickListener() {
          @Override
@@ -84,10 +84,9 @@ private onFragmentBtnSelected listener;
                 listener.phoneselected();
             }
         });
-        map_b.setOnClickListener(new View.OnClickListener() {
+        walfare_b.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                listener.mapselected();
+            public void onClick(View view) { listener.walfareselected();
             }
         });
         social_b.setOnClickListener(new View.OnClickListener() {

@@ -10,12 +10,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class heiat extends Fragment {
+public class PhonesFragmnet extends Fragment {
 
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_heiat,container,false);
+        View view = inflater.inflate(R.layout.fragment_phones,container,false);
         return view;
     }
 }

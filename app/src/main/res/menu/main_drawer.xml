@@ -2,47 +2,51 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/home"
+        android:id="@+id/home_menu_btn"
         android:icon="@drawable/ic_home"
         android:title="صفحه نخست" />
     <item
-        android:id="@+id/cal"
+        android:id="@+id/cal_menu_btn"
         android:icon="@drawable/ic_calender"
         android:title="تقویم" />
     <item
-        android:id="@+id/notif_m"
+        android:id="@+id/notif_menu_btn"
         android:icon="@drawable/ic_notif"
         android:title="اطلاعیه ها" />
     <item
-        android:id="@+id/news"
+        android:id="@+id/news_menu_btn"
         android:icon="@drawable/ic_news"
         android:title="اخبار دانشگاه " />
     <item
-        android:id="@+id/samad"
+        android:id="@+id/samad_menu_btn"
         android:icon="@drawable/ic_samad"
         android:title="سامانه سماد " />
     <item
-        android:id="@+id/heiat_m"
+        android:id="@+id/heiat_menu_btn"
         android:icon="@drawable/ic_heiatelmi"
         android:title="اعضای هیئت علمی" />
     <item
-        android:id="@+id/golestan_m"
+        android:id="@+id/golestan_menu_btn"
         android:icon="@drawable/ic_golestan"
         android:title="سامانه گلستان" />
     <item
-        android:id="@+id/phone_m"
+        android:id="@+id/walfare_S_menu_btn"
+        android:icon="@drawable/ic_walfare_s"
+        android:title="خدمات رفاهی و دانشجویی" />
+    <item
+        android:id="@+id/phone_menu_btn"
         android:icon="@drawable/ic_phonebook"
         android:title="دفترچه تلفن" />
     <item
-        android:id="@+id/social_m"
+        android:id="@+id/social_menu_btn"
         android:icon="@drawable/ic_social"
         android:title="شبکه های اجتماعی" />
     <item
-        android:id="@+id/map_m"
+        android:id="@+id/map_menu_btn"
         android:icon="@drawable/ic_map"
         android:title="نقشه" />
     <item
-        android:id="@+id/logout"
+        android:id="@+id/logout_menu_btn"
         android:icon="@drawable/ic_logout"
         android:title="خروج" />
 </menu>

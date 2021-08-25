@@ -7,10 +7,10 @@ import android.view.ViewGroup;
 
 import androidx.fragment.app.Fragment;
 
-public class register extends Fragment {
+public class RegisterFragment extends Fragment {
 
 
-    public register() {
+    public void register() {
         // Required empty public constructor
     }
 
