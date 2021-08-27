@@ -43,14 +43,55 @@
 
 
     </RelativeLayout>
-
-    <TextView
-        android:id="@+id/calender_article"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="10dp"
-        android:layout_marginEnd="10dp"
-        android:layout_marginTop="50dp"
-        android:layout_marginBottom="10dp"
-        android:text="article" />
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/calender_article"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="55dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="article" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/calender_articledate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:text="date"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/calender_coverlink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="250dp"
+            android:layout_marginBottom="10dp"
+            android:text="coverlink"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/calender_articlelink"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="138dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="140dp"
+            android:layout_marginBottom="10dp"
+            android:text=" articlelink"
+            android:gravity="center"/>
+    </RelativeLayout>
 </androidx.cardview.widget.CardView>
