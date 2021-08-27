@@ -10,8 +10,8 @@
         android:icon="@drawable/ic_calender"
         android:title="تقویم" />
     <item
-        android:id="@+id/notif_menu_btn"
-        android:icon="@drawable/ic_notif"
+        android:id="@+id/event_menu_btn"
+        android:icon="@drawable/ic_events"
         android:title="اطلاعیه ها" />
     <item
         android:id="@+id/news_menu_btn"

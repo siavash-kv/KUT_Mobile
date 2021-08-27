@@ -5,16 +5,13 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.ImageButton;
-import android.widget.Toast;
-
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentTransaction;
 
-public class MainFragmnet extends Fragment {
+public class MainFragment extends Fragment {
 private onFragmentBtnSelected listener;
     @Nullable
     @Override
@@ -33,7 +30,7 @@ private onFragmentBtnSelected listener;
     public interface onFragmentBtnSelected{
         public void calender_selected();
         public void news_selected();
-        public void notification_selected();
+        public void events_selected();
         public void heiat_selected();
         public void phone_selected();
         public void walfare_selected();
@@ -46,7 +43,7 @@ private onFragmentBtnSelected listener;
     private void configureImageButton(View view) {
         ImageButton cal_b = (ImageButton) view.findViewById(R.id.calender_main_btn);
         ImageButton news_b = (ImageButton) view.findViewById(R.id.news_main_btn);
-        ImageButton notif_b = (ImageButton) view.findViewById(R.id.notification_main_btn);
+        ImageButton notif_b = (ImageButton) view.findViewById(R.id.events_main_btn);
         ImageButton photo_b = (ImageButton) view.findViewById(R.id.heiat_main_btn);
         ImageButton phone_b = (ImageButton) view.findViewById(R.id.phone_main_btn);
         ImageButton walfare_b = (ImageButton) view.findViewById(R.id.walfares_main_btn);
@@ -68,7 +65,7 @@ private onFragmentBtnSelected listener;
         notif_b.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                listener.notification_selected();
+                listener.events_selected();
             }
         });
         photo_b.setOnClickListener(new View.OnClickListener() {

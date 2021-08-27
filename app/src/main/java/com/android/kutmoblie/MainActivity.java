@@ -15,7 +15,7 @@ import android.view.MenuItem;
 import com.google.android.material.navigation.NavigationView;
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,MainFragmnet.onFragmentBtnSelected {
+public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener,MainFragment.onFragmentBtnSelected {
   DrawerLayout drawerLayout;
   ActionBarDrawerToggle actionBarDrawerToggle;
   Toolbar toolbar;
@@ -41,7 +41,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
   fragmentManager = getSupportFragmentManager();
   fragmentTransaction = fragmentManager.beginTransaction();
-  fragmentTransaction.add(R.id.item_frag,new MainFragmnet());
+  fragmentTransaction.add(R.id.item_frag,new MainFragment());
   fragmentTransaction.commit();
 
     }
@@ -53,7 +53,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.home_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new MainFragmnet());
+                fragmentTransaction.replace(R.id.item_frag,new MainFragment());
                 fragmentTransaction.commit();
                 return true;
             case R.id.calender_menu_btn:
@@ -62,10 +62,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
                 fragmentTransaction.commit();
                 return true;
-            case R.id.notif_menu_btn:
+            case R.id.event_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new NotificationFragmnet());
+                fragmentTransaction.replace(R.id.item_frag,new EventsFragmnet());
                 fragmentTransaction.commit();
                 return true;
             case R.id.news_menu_btn:
@@ -75,11 +75,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.commit();
                 return true;
             case R.id.samad_menu_btn:
-                Intent intentsamad = new Intent();
-                intentsamad.setAction(Intent.ACTION_VIEW);
-                intentsamad.addCategory(Intent.CATEGORY_BROWSABLE);
-                intentsamad.setData(Uri.parse("http://food.kut.ac.ir/"));
-                startActivity(intentsamad);
+                Intent intent_samad = new Intent();
+                intent_samad.setAction(Intent.ACTION_VIEW);
+                intent_samad.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent_samad.setData(Uri.parse("http://food.kut.ac.ir/"));
+                startActivity(intent_samad);
                 return true;
             case R.id.heiat_menu_btn:
                 fragmentManager = getSupportFragmentManager();
@@ -88,11 +88,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 fragmentTransaction.commit();
                 return true;
             case R.id.golestan_menu_btn:
-                Intent intentgolestan = new Intent();
-                intentgolestan.setAction(Intent.ACTION_VIEW);
-                intentgolestan.addCategory(Intent.CATEGORY_BROWSABLE);
-                intentgolestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
-                startActivity(intentgolestan);
+                Intent intent_golestan = new Intent();
+                intent_golestan.setAction(Intent.ACTION_VIEW);
+                intent_golestan.addCategory(Intent.CATEGORY_BROWSABLE);
+                intent_golestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
+                startActivity(intent_golestan);
                 return true;
             case R.id.social_menu_btn:
                 fragmentManager = getSupportFragmentManager();
@@ -148,10 +148,10 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     @Override
-    public void notification_selected() {
+    public void events_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new NotificationFragmnet());
+        fragmentTransaction.replace(R.id.item_frag,new EventsFragmnet());
         fragmentTransaction.commit();
     }
 
@@ -189,19 +189,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
     @Override
     public void samad_selected() {
-        Intent intentsamad = new Intent();
-        intentsamad.setAction(Intent.ACTION_VIEW);
-        intentsamad.addCategory(Intent.CATEGORY_BROWSABLE);
-        intentsamad.setData(Uri.parse("http://food.kut.ac.ir/"));
-        startActivity(intentsamad);
+        Intent intent_samad = new Intent();
+        intent_samad.setAction(Intent.ACTION_VIEW);
+        intent_samad.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent_samad.setData(Uri.parse("http://food.kut.ac.ir/"));
+        startActivity(intent_samad);
     }
 
     @Override
     public void golestan_selected() {
-        Intent intentgolestan = new Intent();
-        intentgolestan.setAction(Intent.ACTION_VIEW);
-        intentgolestan.addCategory(Intent.CATEGORY_BROWSABLE);
-        intentgolestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
-        startActivity(intentgolestan);
+        Intent intent_golestan = new Intent();
+        intent_golestan.setAction(Intent.ACTION_VIEW);
+        intent_golestan.addCategory(Intent.CATEGORY_BROWSABLE);
+        intent_golestan.setData(Uri.parse("https://golestan.kut.ac.ir/"));
+        startActivity(intent_golestan);
     }
 }
