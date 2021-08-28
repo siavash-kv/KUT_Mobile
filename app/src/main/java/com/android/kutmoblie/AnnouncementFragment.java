@@ -1,6 +1,5 @@
 package com.android.kutmoblie;
 
-import android.content.Context;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -10,7 +9,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.ListAdapter;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.android.volley.Request;
@@ -25,24 +23,22 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.Date;
-import java.util.List;
 
-public class CalenderFragment extends Fragment {
-    private static final String HI = "";
+public class AnnouncementFragment extends Fragment {
+    private static final String announcement_url = "";
 
     private RecyclerView recyclerView;
     private ArrayList<Announcement> announcementList;
-    private CalenderAdapter calenderAdapter;
+    private AnnouncementAdapter announcementAdapter;
     private RequestQueue mrequestQueue;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_calender,container,false);
-        recyclerView= view.findViewById(R.id.calender_recyclerview);
+        View view = inflater.inflate(R.layout.fragment_announcement,container,false);
+        recyclerView= view.findViewById(R.id.announcement_recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(calenderAdapter);
+        recyclerView.setAdapter(announcementAdapter);
 
         announcementList = new ArrayList<>();
         getAnnouncementData();
@@ -50,7 +46,7 @@ public class CalenderFragment extends Fragment {
     }
     private void getAnnouncementData() {
 
-        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, HI, null,
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, announcement_url, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {

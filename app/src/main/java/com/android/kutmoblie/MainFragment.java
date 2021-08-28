@@ -41,7 +41,7 @@ private onFragmentBtnSelected listener;
     }
 
     private void configureImageButton(View view) {
-        ImageButton cal_b = (ImageButton) view.findViewById(R.id.calender_main_btn);
+        ImageButton cal_b = (ImageButton) view.findViewById(R.id.announcement_main_btn);
         ImageButton news_b = (ImageButton) view.findViewById(R.id.news_main_btn);
         ImageButton notif_b = (ImageButton) view.findViewById(R.id.events_main_btn);
         ImageButton photo_b = (ImageButton) view.findViewById(R.id.heiat_main_btn);

@@ -19,6 +19,10 @@ public class News {
         this.article = article;
     }
 
+    public News() {
+
+    }
+
     @Override
     public String toString() {
         return "Announcement{" +

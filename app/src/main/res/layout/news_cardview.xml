@@ -18,7 +18,7 @@
 
 
         <TextView
-            android:id="@+id/calender_title"
+            android:id="@+id/news_title"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -37,7 +37,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/calender_article"
+            android:id="@+id/news_article"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -51,7 +51,7 @@
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@+id/calender_articledate"
+            android:id="@+id/news_articledate"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="250dp"
@@ -62,7 +62,7 @@
             android:gravity="center"/>
 
         <TextView
-            android:id="@+id/calender_coverlink"
+            android:id="@+id/news_coverlink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
@@ -73,7 +73,7 @@
             android:gravity="center"/>
 
         <TextView
-            android:id="@+id/calender_articlelink"
+            android:id="@+id/news_articlelink"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="138dp"

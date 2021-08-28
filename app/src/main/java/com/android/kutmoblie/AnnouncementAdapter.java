@@ -13,24 +13,24 @@ import java.util.Date;
 import java.util.Random;
 
 
-public class CalenderAdapter extends RecyclerView.Adapter<CalenderAdapter.CalenderViewHolder> {
+public class AnnouncementAdapter extends RecyclerView.Adapter<AnnouncementAdapter.AnnouncementViewHolder> {
  private Context mcontext;
  private ArrayList<Announcement> mAnnouncement;
 
-  public CalenderAdapter(Context context, ArrayList<Announcement> announcements){
+  public AnnouncementAdapter(Context context, ArrayList<Announcement> announcements){
       mcontext = context;
       mAnnouncement = announcements;
   }
 
     @NonNull
     @Override
-    public CalenderViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public AnnouncementViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
         View v = LayoutInflater.from(mcontext).inflate(R.layout.calender_cardview ,parent,false);
-        return new CalenderViewHolder(v);
+        return new AnnouncementViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CalenderViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull AnnouncementViewHolder holder, int position) {
      Announcement currentitem = mAnnouncement.get(position);
      String title = currentitem.getTitle();
      String article = currentitem.getArticle();
@@ -50,14 +50,14 @@ public class CalenderAdapter extends RecyclerView.Adapter<CalenderAdapter.Calend
     public int getItemCount() {
         return mAnnouncement.size();
     }
-    public class CalenderViewHolder extends RecyclerView.ViewHolder {
+    public class AnnouncementViewHolder extends RecyclerView.ViewHolder {
         public TextView title;
         public TextView article;
         public TextView article_date;
         public TextView cover_link;
         public TextView article_link;
 
-        public CalenderViewHolder(@NonNull View itemView) {
+        public AnnouncementViewHolder(@NonNull View itemView) {
             super(itemView);
             title = itemView.findViewById(R.id.calender_title);
             article = itemView.findViewById(R.id.calender_article);

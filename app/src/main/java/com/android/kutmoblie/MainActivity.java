@@ -59,13 +59,13 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.calender_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
+                fragmentTransaction.replace(R.id.item_frag,new AnnouncementFragment());
                 fragmentTransaction.commit();
                 return true;
             case R.id.event_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new EventsFragmnet());
+                fragmentTransaction.replace(R.id.item_frag,new EventFragment());
                 fragmentTransaction.commit();
                 return true;
             case R.id.news_menu_btn:
@@ -120,7 +120,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
             case R.id.logout_menu_btn:
                 fragmentManager = getSupportFragmentManager();
                 fragmentTransaction = fragmentManager.beginTransaction();
-                fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
+                fragmentTransaction.replace(R.id.item_frag,new AnnouncementFragment());
                 fragmentTransaction.commit();
                 return true;
 
@@ -135,7 +135,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void calender_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new CalenderFragment());
+        fragmentTransaction.replace(R.id.item_frag,new AnnouncementFragment());
         fragmentTransaction.commit();
     }
 
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     public void events_selected() {
         fragmentManager = getSupportFragmentManager();
         fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.item_frag,new EventsFragmnet());
+        fragmentTransaction.replace(R.id.item_frag,new EventFragment());
         fragmentTransaction.commit();
     }
 

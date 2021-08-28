@@ -16,7 +16,7 @@
         app:layout_constraintEnd_toEndOf="@+id/linearLayout6">
 
         <ImageButton
-            android:id="@+id/calender_main_btn"
+            android:id="@+id/announcement_main_btn"
             android:layout_width="85dp"
             android:layout_height="87dp"
             android:layout_gravity="center"
@@ -25,7 +25,7 @@
             tools:ignore="SpeakableTextPresentCheck" />
 
         <TextView
-            android:id="@+id/calender_textView"
+            android:id="@+id/announcement_textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"

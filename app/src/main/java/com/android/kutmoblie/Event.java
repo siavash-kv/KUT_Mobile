@@ -22,6 +22,10 @@ public class Event {
         this.priority = priority;
     }
 
+    public Event() {
+
+    }
+
     @Override
     public String toString() {
         return "Event{" +

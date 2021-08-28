@@ -24,29 +24,29 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class HeiatFragment extends Fragment {
-    private static final String staff_url = "";
+public class EventFragment extends Fragment {
+    private static final String HI = "";
 
     private RecyclerView recyclerView;
-    private ArrayList<Staff> stafflist;
-    private StaffAdapter staffAdapter;
+    private ArrayList<Event> eventList;
+    private EventAdapter eventAdapter;
     private RequestQueue mrequestQueue;
     @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_heiat,container,false);
-        recyclerView= view.findViewById(R.id.heiat_recyclerview);
+        View view = inflater.inflate(R.layout.fragment_announcement,container,false);
+        recyclerView= view.findViewById(R.id.event_recyclerview);
         recyclerView.setHasFixedSize(true);
         recyclerView.setLayoutManager(new LinearLayoutManager(getActivity(), LinearLayoutManager.VERTICAL, false));
-        recyclerView.setAdapter(staffAdapter);
+        recyclerView.setAdapter(eventAdapter);
 
-        stafflist = new ArrayList<>();
-        getNewsData();
+        eventList = new ArrayList<>();
+        getEventData();
         return view;
     }
-    private void getNewsData() {
+    private void getEventData() {
 
-        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, staff_url, null,
+        JsonObjectRequest request = new JsonObjectRequest(Request.Method.GET, HI, null,
                 new Response.Listener<JSONObject>() {
                     @Override
                     public void onResponse(JSONObject response) {
@@ -60,7 +60,7 @@ public class HeiatFragment extends Fragment {
                                 String image_url = object.getString("image_url");
                                 String opis = object.getString("opis");
 
-                                stafflist.add(new Staff());
+                                eventList.add(new Event());
                             }
 
 

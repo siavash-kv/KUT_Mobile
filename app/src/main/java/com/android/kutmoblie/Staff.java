@@ -29,6 +29,10 @@ public class Staff {
         this.date_joined = date_joined;
     }
 
+    public Staff() {
+
+    }
+
     @Override
     public String toString() {
         return "Staff{" +
